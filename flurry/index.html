@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title>Flurry - Action User Ratio</title>
+    <style>
+      #chart-div {
+        float: left
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="chart-div"></div>
+
+    <p>
+      For an UI to be intuitive to a user, especially first time users, it is important
+      for the UI to be fimiliar to the user. This is why I have chosen to display the
+      data as a simple line graph complemented with area shading to show the radio of active
+      users and total users.
+    </p>
+
+    <p>
+      However, I do have to note that no amount of intuitive design is going to be equivilent
+      to extensive user research. UX designers, ultimately, are not the end-users and therefore
+      cannot design the UI to best fit the users' need. Only through extensive user research can
+      you achieve the best usability.
+    </p>
+
+    <h3>List of Libraries Used</h3>
+    <ul>
+      <li><a href="http://jquery.com/">jQuery</a></li>
+      <li><a href="http://code.google.com/apis/chart/">Google API Chart Tool</a></li>
+    </ul>
+
+    <script id="active-users" type="text/json" src="./public/json/ActiveUsers.json"></script>
+    <script id="total-users" type="text/json" src="./public/json/TotalUsers.json"></script>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="./public/js/active-user-ratio-chart.js"></script>
+  </body>
+</html>
